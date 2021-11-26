@@ -1,0 +1,152 @@
+﻿
+@{
+    ViewBag.Title = "Account";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+
+    <div class="contain_2 container-fluid">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h2 class="page-title">Quản Lý Tài Khoản</h2>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Header -->
+        <!--Content-->
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2">
+                <div class="table-data__tool pu">
+
+                    <div class="table-data__tool-right">
+                        <a href="@Url.Action("Create","Accounts")">
+                            <button class="au-btn ">
+                                Thêm  <i class="fas fa-plus"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive table--no-card">
+                <table class="table table-borderless table-striped table-earning">
+                    <thead class="title-cate">
+                        <tr>
+                    <thead>
+                        <tr>
+                            <th>Mã TK</th>
+                            <th>Tên Đăng Nhập</th>
+                            <th>Mật Khẩu</th>
+                            <th>Họ Tên</th>
+                            <th>SĐT</th>
+                            <th>Email</th>
+                            <th>Quyền</th>
+                            <th>Họat Động</th>
+                        </tr>
+                    </thead>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>admin</td>
+                            <td>******</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>0334334334</td>
+                            <td>abc@gmail.com</td>
+                            <td>admin</td>
+                            <td>
+                                <div class="table-data-feature">
+                                    <a class="item" href="@Url.Action("Edit","Accounts")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td> namdv </td>
+                            <td>******</td>
+                            <td>Nguyễn Văn B</td>
+                            <td>0334333323</td>
+                            <td>nam@gmail.com</td>
+                            <td>admin</td>
+                            <td>
+                                <div class="table-data-feature">
+                                    <a class="item" href="@Url.Action("Edit","Accounts")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>thuht</td>
+                            <td>******</td>
+                            <td>Hoàng Thị T</td>
+                            <td>0334332242</td>
+                            <td>abc@gmail.com</td>
+                            <td>user</td>
+                            <td>
+                                <div class="table-data-feature">
+                                    <a class="item" href="@Url.Action("Edit","Accounts")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+                        <!-- Xác nhận xoá -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Xác nhận xoá?</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Bạn có muốn xoá bản ghi này ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                        <button type="button" class="btn btn-info">Đồng ý</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--end content-->
+
+    </div>
+</div>
+
+

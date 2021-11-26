@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "ChangePass";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section nhungCss{
+    <link href="~/wwwroot/css/account1.css" rel="stylesheet" />
+}
+<div class="content1">
+    <div class="content1-left">
+        <div class="taikhoan">
+            <div class="a1">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="a2">
+                <p> TÀI KHOẢN</p>
+            </div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href=@Url.Action("EditAccount","Home")>Đổi thông tin cá nhân</a></li>
+                <li><a href=@Url.Action("ChangePass","Home")>Đổi mật khẩu</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content1-right">
+        <div>
+            <i class="fas fa-home"></i>
+            <a href=@Url.Action("Index","Home") class="content_cart-home">Trang chủ</a>
+            <i class="fas fa-angle-double-right"></i>
+            <a href=@Url.Action("Account","Home") class="content_cart-home">Tài khoản</a>
+            <i class="fas fa-angle-double-right"></i>
+            <a href=@Url.Action("ChangePass","Home") class="content_cart-title">Thay đổi mật khẩu</a>
+        </div>
+        <div class="title_block-product">
+            <h3>
+                Thay đổi mật khẩu 
+            </h3>
+        </div>
+        <hr />
+        <div class="register_write">
+            <div class="input-box">
+                <label id="pass">Mật khẩu hiện tại</label>
+                <input type="password" value="">
+            </div>
+            <div class="input-box">
+                <label id="passnew1">Mật khẩu mới</label>
+                <input type="password" value="">
+            </div>
+            <div class="input-box">
+                <label id="passnew2">Nhập lại mật khẩu mới</label>
+                <input type="password" value="">
+            </div>
+            <div class="btn-box">
+                <a href=@Url.Action("Account","Home")>Lưu thay đổi</a>
+                <a style="margin-left: 98px;" href=@Url.Action("Account","Home")>Hủy</a>
+            </div>
+        </div>
+    </div>
+</div>
+

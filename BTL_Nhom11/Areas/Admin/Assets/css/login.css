@@ -1,0 +1,95 @@
+﻿/* Các xử lý định dạng cho login.html */
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.loginview .text-right{
+	padding-left: 20px;
+}
+
+
+.loginview{
+	height:auto; /*độ rộng*/
+	text-align:left !important;
+	background: #eee;
+	font-weight:600 !important;
+	box-shadow: 5px 5px 5px #888; /* đổ bóng */
+	border-radius: 10px; /*bo góc */
+	font-size: 17px;
+	
+}
+.loginview .title{
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	background:#555;
+	color: #fff;
+	font-weight: 700px;
+	padding:10px;
+	text-transform:uppercase;
+}
+.mt-20{
+	margin-top:20px;
+}
+
+.loginview .btn-login{
+	background-color: #318fb5;
+	color: #fff;
+	margin-right: 10px ;
+}
+.loginview .btn-exit{
+	background-color: #318fb5;
+	color: #fff;
+}
+.fas-i{
+	color: #000;
+}
+
+.btn-login i{
+	margin-right: 5px;
+}
+.btn-exit i{
+	margin-left: 5px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.loginview label{
+		text-align:left !important;/* important là quan trọng  duocdjw ưu tiên cuối*/
+		font-weight:600 !important;
+		padding-bottom:10px;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.loginview label{
+		text-align:left !important;/* important là quan trọng  duocdjw ưu tiên cuối*/
+		font-weight:600 !important;
+		padding-bottom:10px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.loginview label{
+		text-align:left !important;
+		font-weight:600 !important;
+		padding-bottom:10px;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.loginview label{
+		text-align:left !important;
+		font-weight:600 !important;
+		padding-bottom:10px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.loginview label{
+		text-align:left !important;
+		font-weight:600px !important;
+		padding-bottom:10px;
+	}
+}

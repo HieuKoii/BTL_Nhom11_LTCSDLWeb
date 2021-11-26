@@ -1,0 +1,138 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+
+    <div class="contain_2 container-fluid">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h2 class="page-title">Quản Lý Đơn Hàng</h2>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Header -->
+        <!--Content-->
+
+        <div class="row">
+            <div class="table-responsive table--no-card table-product">
+                <table class="table table-borderless table-striped table-earning">
+                    <thead class="title-cate">
+                        <tr>
+                    <thead>
+                        <tr>
+                            <th>Mã ĐH</th>
+                            <th>Mã KH</th>
+                            <th>Tên Khách Hàng</th>
+                            <th>SĐT</th>
+                            <th>Địa Chỉ</th>
+                            <th>Tổng Tiền</th>
+                            <th>Ngày Đặt</th>
+                            <th>Tình Trạng</th>
+
+                            <th>Hoạt Động</th>
+                        </tr>
+                    </thead>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0001</td>
+                            <td>005</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>0334144012</td>
+                            <td>134/22 Cầu Diễn - Hà Nội</td>
+                            <td>100000</td>
+                            <td>8/10/2021</td>
+                            <td>Đã Giao</td>
+                            <td>
+                                <div class="table-data-feature">
+
+                                    <a class="item" href="@Url.Action("Edit","Orders")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0002</td>
+                            <td>0008</td>
+                            <td>Nguyễn Văn B</td>
+                            <td>0334144012</td>
+                            <td>134/22 Cầu Diễn - Hà Nội</td>
+                            <td>210000</td>
+                            <td>8/10/2021</td>
+                            <td>Đã Giao</td>
+                            <td>
+                                <div class="table-data-feature">
+
+                                    <a class="item" href="@Url.Action("Edit","Orders")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td>0009</td>
+                            <td>Nguyễn Văn C</td>
+                            <td>0334143333</td>
+                            <td>134/22 Đại Học Công Nghiệp Hà Nội</td>
+                            <td>50000</td>
+                            <td>8/10/2021</td>
+                            <td>Đang xác nhận</td>
+                            <td>
+                                <div class="table-data-feature">
+
+                                    <a class="item" href="@Url.Action("Edit","Orders")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Xác nhận xoá -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Xác nhận xoá?</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Bạn có muốn xoá bản ghi này ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                                        <button type="button" class="btn btn-info">Đồng ý</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--end content-->
+
+    </div>
+</div>
+
+

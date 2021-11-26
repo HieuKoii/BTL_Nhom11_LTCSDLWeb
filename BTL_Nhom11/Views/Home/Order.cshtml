@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section nhungCss{
+    <link href="~/wwwroot/css/order.css" rel="stylesheet" />
+}
+
+<div class="content_right">
+    <h3 class="content_right-title">Địa chỉ giao hàng</h3>
+    <div class="content_customer">
+        <form action="" class="form_infor">
+            <div class="form_infor-input">
+                <label class="lable">Họ và tên người nhận </label>
+                <input type="text" />
+
+            </div>
+            <div class="form_infor-input">
+                <label class="lable">Email </label>
+                <input type="text" />
+
+            </div>
+
+            <div class="form_infor-input">
+                <label class="lable">Số điện thoại</label>
+                <input type="text" />
+
+            </div>
+
+            <div class="form_infor-input">
+                <label class="lable">Quốc Gia </label>
+                <input type="text" />
+
+            </div>
+
+            <div class="form_infor-input">
+                <label class="lable">Tỉnh/Thành Phố</label>
+                <input type="text" />
+
+            </div>
+
+            <div class="form_infor-input">
+                <label class="lable">Quận/Huyện</label>
+                <input type="text" />
+
+            </div>
+
+            <div class="form_infor-input">
+                <label class="lable">Phường/Xã</label>
+                <input type="text" />
+
+            </div>
+
+            <div class="form_infor-input">
+                <label class="lable">Địa chỉ nhận hàng</label>
+                <input type="text" />
+
+            </div>
+
+            <div class="form_infor-input">
+                <label class="lable">Tổng tiền:</label>
+                <span>15.000VND</span>
+
+            </div>
+
+
+        </form>
+        <div class="form_infor-submit">
+            <a href=@Url.Action("DetailOrder","Home")><input type="submit" value="Đặt mua" /></a>
+
+        </div>
+
+    </div>
+
+
+</div>
+

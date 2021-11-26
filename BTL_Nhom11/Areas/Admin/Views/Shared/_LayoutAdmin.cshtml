@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Danh muc</title>
+    <link href="" type="text/css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/bootstrap-grid.css" type="text/css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/all.css" type="text/css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/basic.css" type="text/css" rel="stylesheet" />
+
+    <link href="~/Areas/Admin/Assets/css/index.css" type="text/css" rel="stylesheet" />
+ 
+
+    <script language="javascript" src="~/Areas/Admin/Assets/ckeditor/ckeditor.js"></script>
+    <script language="javascript" src="~/Areas/Admin/Assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script language="javascript" src="~/Areas/Admin/Assets/js/bootstrap.bundle.min.js"></script>
+    <script language="javascript" src="~/Areas/Admin/Assets/js/index.js"></script>
+
+
+</head>
+<body>
+
+
+    <div class="wrapper" style="height:200vh">
+
+        <!----------thanh danh mục -->
+        @{ 
+            Html.RenderPartial("Sidebar");
+        }
+
+        <!----------end thanh danh mục -->
+
+
+
+        <div class="content container-fluid">
+            <!----------thanh   header-->
+            @{ 
+                Html.RenderPartial("Header");
+            }
+
+            <!---------end thanh header-->
+            <!----------content -->
+            <div class="content-wrapper">
+                @RenderBody()
+                
+            </div>
+            <!-------end content-->
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

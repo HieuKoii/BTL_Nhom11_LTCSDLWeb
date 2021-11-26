@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section nhungCss{
+    <link href="~/wwwroot/css/product_detail.css" rel="stylesheet" />
+}
+
+
+<div class="pd_content">
+    <div class="content_title">
+        <i class="fas pd_fa-home"></i>
+        <a href=@Url.Action("Index","Home") class="header_bottom-home">Trang chủ</a>
+        <i class="fas fa-angle-double-right"></i>
+        <a href=@Url.Action("ProductDetail","Home") class="header_bottom-title">Chi tiết sản phẩm</a>
+    </div>
+    <div class="cp_content_product">
+        <div class="content_right-img">
+            <img src="~/wwwroot/Images/8935001830368_1.jpg" />
+
+        </div>
+        <div class="content_right-detail">
+            <h2>Mực Bút Máy Thiên Long <br>  FPI-07 - Mực Tím</h2>
+            <div class="product_details">
+                <p><span> Nhà xuất bản</span>: </p>
+
+            </div>
+            <div class="product_details">
+                <p><span>Xuất xứ</span>: Việt Nam</p>
+
+            </div>
+            <div class="product_details">
+                <p><span>Thương hiệu</span>: Thiên Long</p>
+
+            </div>
+            <div class="product_details">
+                <p><span>Tình trạng</span>: Còn hàng</p>
+            </div>
+            <div class="price_gifts">
+                <span class="promotion-price">1.399.000 VNĐ</span>
+            </div>
+            <div class="product_quantity">
+                <p class="hai">Số lượng</p>
+                <p class="hai_child a">:</p>
+                <p class="nam">
+                    <span class="mot">-</span>
+                    <span class="ba">1</span>
+                    <span class="bon">+</span>
+                </p>
+            </div>
+            <div class="button">
+                <button type="button" class="btn_them-gio_hang">
+                    <a href=@Url.Action("Card","Home") class="them_gio_hang_link"><i class="fas fa-cart-plus"></i> Thêm vào giỏ hàng</a>
+                </button>
+
+                <button type="button" class="btn_mua_ngay"><a href=@Url.Action("Order","Home") class="mua_ngay_link"> Mua ngay</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+

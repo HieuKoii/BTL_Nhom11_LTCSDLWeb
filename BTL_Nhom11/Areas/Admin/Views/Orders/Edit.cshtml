@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+
+    <div class="contain_2 container-fluid">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h2 class="page-title">Sửa Đơn Hàng</h2>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Header -->
+        <!--Content-->
+
+        <div class="row">
+            <div class="col-1"></div>
+
+            <div class="col-10">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Form -->
+                        <form action="@Url.Action("Order","Home")">
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="form-group">
+                                        <label>Mã Khách hàng</label>
+                                        <input class="form-control" value="005" disabled type="text" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tên Khách Hàng</label>
+                                        <input class="form-control" value="Nguyễn Văn A" disabled type="text" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Tình trạng</label>
+                                        <select class="form-control select">
+                                            <option>Đang Giao</option>
+                                            <option>Đang Vận Chuyển</option>
+                                            <option>Chờ Xác Nhận</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Số điện thoại</label>
+                                        <input class="form-control" value="0334334334" disabled type="text" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tổng Tiền</label>
+                                        <input class="form-control" value="100000" disabled type="text" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ngày Đặt</label>
+                                        <input type="date" class="form-control" disabled value="2021-08-10" placeholder="Alias" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label>Địa Chỉ</label>
+                                <input class="form-control" value="134/22 Cầu Diễn - Hà Nội" disabled type="text" />
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="@Url.Action("Order","Home")">
+                                    <button class="btn btn-info" type="submit">
+                                        Sửa
+                                    </button>
+                                </a>
+                                <a href="@Url.Action("Order","Home")" class="btn btn-link">Huỷ</a>
+                            </div>
+
+                        </form>
+                        <!-- Form -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+        <!--end content-->
+
+    </div>
+</div>
+

@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewBag.Title = "DetailOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section nhungCss{
+    <link href="~/wwwroot/css/detailorder.css" rel="stylesheet" />
+}
+
+<div class="pl_content_top">
+    <div class="content_right">
+        <div class="content_customer">
+            <div class="fhs_order_info">
+                <div style="display:none;"><center><img src="#"></center></div>
+                <div>
+                    Đơn hàng của bạn đã được tiếp nhận
+                </div>
+                <div>Cảm ơn bạn đã mua hàng tại Fahasa.com</div>
+                <div>
+                    Mã đơn hàng của bạn là:&nbsp;<span>#102247625</span>
+                </div>
+                <div>Bạn sẽ sớm nhận được email xác nhận đơn hàng từ chúng tôi.</div>
+                <div class="fhs-btn-box">
+                    <button type="button" title="Tiếp tục mua sắm" class="fhs-btn-confirm fhs-btn-goto" style="text-transform: uppercase; font-size: 0.8em; font-weight: 600; width: 300px; height: 40px;; border-radius: 8px; background-color: #CC0000; color: white; " onclick="location.href = '@Url.Action("ProductList","Home")'">Tiếp tục mua sắm</button>
+                </div>
+
+            </div>
+
+            <div class="fhs_registerquick_info">
+                <div class="popup-registerquick-title" style="color: #FC642D;">
+                    ĐĂNG KÝ NHANH THÀNH VIÊN FASHASA.COM
+                </div>
+                <div class="popup-change-content-in">
+                    <div class="fhs-registerquick-info">
+                        <div>
+                            Thông tin tài khoản sẽ tự động thêm vào tài khoản của bạn:
+                        </div>
+                        <div class="fhs-info-icon fhs-style-bold-600">
+
+                            <div>Nguyen Duy Thanh</div>
+                        </div>
+                        <div class="fhs-info-icon fhs-style-bold-600">
+                            <div>145, Phường Cộng Hoà, Huyện Chí Linh, Hải Dương, VN</div>
+                        </div>
+                    </div>
+                    <div class="popup-change-content">
+                        <div class="fhs-registerquick-order">Đơn hàng của bạn trị giá <span>90.000 đ</span>, bạn sẽ nhận được <span>3.851 F-Point</span> khi đăng ký làm thành viên của Fahasa.com</div>
+                        <div class="fhs-btn-box">
+                            <button type="button" title="Tiếp tục mua sắm" class="fhs-btn-confirm fhs-btn-goto" style="text-transform: uppercase; font-size: 1em; font-weight: 600; width: 300px;height:40px;; border-radius: 8px; color: white; background-color: #CC0000; margin-top:15px; " onclick="location.href = '@Url.Action("Register","Login")'">Đăng ký</button>
+                        </div>
+                        <div class="fhs-popup-msg fhs-registerquick-msg"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="table-wrapper">
+                <div class="table-scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="text">Ảnh sản phẩm</th>
+                                <th class="text">Tên sản phẩm</th>
+                                <th class="text">Mã sản phẩm</th>
+                                <th class="text">Đơn giá</th>
+                                <th class="text">Số lượng mua</th>
+                                <th class="text">Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img class="image" src="~/wwwroot/Images/pro_9.jpg"></td>
+                                <td>Bút Bi 0.5 mm Laris - Thiên Long TL-095 - Mực Xanh</td>
+                                <td>sp01</td>
+                                <td>10.000đ</td>
+                                <td>2</td>
+                                <td>20.000đ</td>
+                            </tr>
+                            <tr>
+                                <td><img class="image" src="~/wwwroot/Images/pro_8.jpg"></td>
+                                <td>Vỉ 5 Bút Bi Thiên Long TL-027 (Mẫu Màu Giao Ngẫu Nhiên)</td>
+                                <td>sp02</td>
+                                <td>10.000đ</td>
+                                <td>2</td>
+                                <td>20.000đ</td>
+                            </tr>
+                            <tr>
+                                <td><img class="image" src="~/wwwroot/Images/pro_7.jpg"></td>
+                                <td>Hộp 20 Bút Bi 0.5 mm Treeden - Thiên Long TL-079 - Mực Xanh</td>
+                                <td>sp03</td>
+                                <td>10.000đ</td>
+                                <td>2</td>
+                                <td>20.000đ</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="text-align:right;">Thành tiền</td>
+                                <td>60.000</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="text-align:right;">Phí vận chuyển</td>
+                                <td>30.000đ</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="text-align:right;">Giao hàng tiêu chuẩn</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="text-align:right;">Tổng Số Tiền (gồm VAT)</td>
+                                <td>90.000đ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fhs-btn-box">
+                   <button type="button" class="fhs-btn-confirm fhs-btn-goto" style="text-transform: uppercase; font-size: 1em; font-weight: 600; width: 300px;height:40px; border-radius: 8px; color: white; background-color: #CC0000; margin-top:15px; " onclick="location.href = '@Url.Action("Index","Home")'">Trở về trang chủ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

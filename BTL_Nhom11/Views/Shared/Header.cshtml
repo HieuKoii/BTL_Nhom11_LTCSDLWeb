@@ -1,0 +1,67 @@
+﻿
+@section nhungCss{
+    <link href="~/wwwroot/css/index.css" rel="stylesheet" />
+}
+<div class="header">
+    <div class="top">
+        <div class="header_right">
+            <div id="menu_login">
+                <ul>
+                    @*<li>
+                        <a href=@Url.Action("Login","Login")>Đăng nhập <i class="fas fa-sign-in-alt" style="padding-left: 5px;"></i></a>
+                    </li>*@
+
+                    @*thay đổi khi đăng nhập*@
+                    <li style="color: white; font-weight: bold">
+                        @*<i class="fas fa-user" style="padding-right: 5px;"></i> Phùng Văn Đại*@
+                        <a href=@Url.Action("Login","Login")>Đăng nhập <i class="fas fa-sign-in-alt" style="padding-left: 5px;"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href=@Url.Action("Account","Home")>Tài Khoản</a></li>
+                            <li><a href=@Url.Action("Index","Home")>Thoát <i class="fas fa-sign-out-alt"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header_midle">
+        <div class="header_brand-logo">
+            <img src="~/wwwroot/Images/logo.png" class="logo_img" />
+        </div>
+        <div class="header_navbar-search">
+            <div class="box_search">
+                <input type="search" placeholder="Tìm kiếm ..." />
+            </div>
+            <a href=@Url.Action("ProductList","Home") class="icon_search"><i class="fas fa-search "></i></a>
+        </div>
+        <div class="cart">
+            <div class="cart_child">
+                <a href=@Url.Action("Card","Home") class="header_right-nav--link">Giỏ hàng</a>
+                <i class="fas fa-cart-plus"></i>
+            </div>
+        </div>
+    </div>
+    <div class="header_menu">
+        <ul class="header_navbar">
+            <li class="header_navbar-item">
+                <i class="fas fa-home"></i>
+                <a href="@Url.Action("Index","Home")" class="header_navbar-item--link ">Trang chủ</a>
+            </li>
+            <li class="header_navbar-item">
+                <a href="@Url.Action("ProductList","Home")" class="header_navbar-item--link">Bút - Viết</a>
+            </li>
+            <li class="header_navbar-item">
+                <a href="@Url.Action("ProductList","Home")" class="header_navbar-item--link">Dụng cụ học sinh</a>
+            </li>
+            <li class="header_navbar-item">
+                <a href="@Url.Action("ProductList","Home")" class="header_navbar-item--link">Sản phẩm văn phòng</a>
+            </li>
+            <li class="header_navbar-item">
+                <a href="@Url.Action("ProductList","Home")" class="header_navbar-item--link">Dụng cụ về giấy</a>
+            </li>
+            <li class="header_navbar-item">
+                <a href="@Url.Action("ProductList","Home")" class="header_navbar-item--link">Dụng cụ vẽ</a>
+            </li>
+        </ul>
+    </div>
+</div>

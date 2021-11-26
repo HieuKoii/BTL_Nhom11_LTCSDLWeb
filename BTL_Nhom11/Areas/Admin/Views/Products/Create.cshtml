@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+
+    <div class="contain_2 container-fluid ">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h2 class="page-title">Thêm sản phẩm</h2>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Header -->
+        <!--Content-->
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 col-sm-12 col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Form -->
+                        <form action="@Url.Action("Product","Home")">
+
+                            <div class="form-group">
+                                <label>Tên sản phẩm</label>
+                                <input class="form-control" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Ảnh đại diện</label>
+                                <input class="form-control" type="file" />
+                            </div>
+                            <div class="form-group">
+                                <label>Giá bán</label>
+                                <input class="form-control" type="number" />
+                            </div>
+                            <div class="form-group">
+                                <label>Nhà cung cấp</label>
+                                <input class="form-control" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Xuất xứ</label>
+                                <input class="form-control" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Số lượng</label>
+                                <input class="form-control" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label>Danh mục</label>
+                                <select class="form-control select">
+                                    <option>Chọn danh mục</option>
+                                    <option>Bút - Viết</option>
+                                    <option>Dụng Cụ Học Sinh</option>
+                                    <option>Sản Phẩm Về Giấy</option>
+                                    <option>Dụng Cụ Văn Phòng</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Mô tả</label>
+                                <textarea rows="8" cols="100" id="txtNotes"></textarea>
+
+                            </div>
+
+                            <div class="mt-1">
+                                <button class="btn btn-info" type="submit">
+                                    Thêm
+                                </button>
+                                <a href="@Url.Action("Product","Home")" class="btn btn-link">Huỷ</a>
+                            </div>
+
+
+
+                            <script language="javascript">
+                                var editor = CKEDITOR.replace('txtNotes');
+                            </script>
+                        </form>
+                        <!-- /Form -->
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <!--end content-->
+
+    </div>
+</div>

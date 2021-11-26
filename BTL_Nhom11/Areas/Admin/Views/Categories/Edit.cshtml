@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+
+    <div class="contain_2 container-fluid">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h2 class="page-title">Quản Lý Danh Mục</h2>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Header -->
+        <!--Content-->
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2">
+                <div class="table-data__tool pu">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <div class="card ">
+                    <div class="card-body">
+                        <!-- Form -->
+                        <form action="@Url.Action("Category","Home")">
+                            <div class="form-group">
+                                <label>Tên chuyên mục</label>
+                                <input class="form-control"
+                                       type="text"
+                                       value="Thước Học Tập" />
+                            </div>
+                            <div class="mt-4">
+                                <button class="btn btn-info" type="submit">
+                                    Cập nhật
+                                </button>
+                                <a href="@Url.Action("Category","Home")" class="btn btn-link">Huỷ</a>
+                            </div>
+                        </form>
+                        <!-- /Form -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <!--end content-->
+
+    </div>
+</div>
+
+

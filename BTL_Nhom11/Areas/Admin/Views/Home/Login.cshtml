@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = null;
+}
+<!-- Thiết kế nguyên mẫu Đăng nhập hệ thống (login.html) -->
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login </title>
+
+    <link href="~/Areas/Admin/Assets/css/login.css" type="text/css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/bootstrap.css" type="text/css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/bootstrap-grid.css" type="text/css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/all.css" type="text/css" rel="stylesheet" />
+    <link href="~/Areas/Admin/Assets/css/basic.css" type="text/css" rel="stylesheet" />
+
+    <script language="javascript" src="~/Areas/Admin/Assets/ckeditor/ckeditor.js"></script>
+    <script language="javascript" src="~/Areas/Admin/Assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script language="javascript" src="~/Areas/Admin/Assets/js/bootstrap.bundle.min.js"></script>
+    <script language="" src=""></script>
+
+</head>
+<body>
+    <div class="container-sm">
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3">
+                <form name="frmLogin" action="" method="">
+                    <div class="loginview">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="title text-center">Đăng nhập</div>
+                            </div>
+                        </div>
+                        <div class="row p-3 mt-3">
+                            <label for="txtName" class="col-md-4 text-right col-form-label"> Tên đăng nhập</label>
+                            <div class="col-md-6"><input type="text" class="form-control" id="txtName" /></div>
+                        </div>
+
+                        <div class="row p-3">
+                            <label type="password" for="txtPass" class="col-md-4 text-right col-form-label"> Mật khẩu</label>
+                            <div class="col-md-6"><input type="text" class="form-control" id="txtPass" /></div>
+                        </div>
+                        <div class="col-md-6 offset-md-4">
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="chkSave" />
+                                    <label for="chkSave" class="form-check-label">Lưu mật khẩu!</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-md-12 text-center">
+                                <a href="#" class="fas-i"><i class="fas fa-key"></i> Quên mật khẩu?</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                                <a href="#" class="fas-i"><i class="fas fa-question-circle"></i> Trợ giúp!</a>
+                            </div>
+                        </div>
+                        <div class="row p-3">
+                            <div class="col-md-12 text-center">
+                                <a href="@Url.Action("Index","Home")"><button type="button" class="btn btn-login"><i class="fas fa-sign-in-alt"></i>Đăng nhập</button></a>
+                                <a href="@Url.Action("Index","Home")"><button type="button" class="btn btn-exit">Thoát<i class="fas fa-sign-in-alt"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

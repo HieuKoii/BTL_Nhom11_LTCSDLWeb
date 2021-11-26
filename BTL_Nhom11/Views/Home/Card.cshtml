@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Card";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section nhungCss{
+    <link href="~/wwwroot/css/cart.css" rel="stylesheet" />
+}
+
+<div class="content_card">
+    <div>
+
+        <i class="fas fa-home"></i>
+        <a href=@Url.Action("Index","Home") class="content_cart-home">Trang chủ</a>
+        <i class="fas fa-angle-double-right"></i>
+        <a href=@Url.Action("Order","Home") class="content_cart-title">Thanh toán đơn hàng</a>
+    </div>
+    <div class="title_block-product">
+        <h3>
+            giỏ hàng của bạn
+        </h3>
+        <hr>
+
+    </div>
+    <div class="shopcart_product-table">
+        <table class="table table-striped">
+            <thead>
+                <tr class="head-tr">
+                    <th class="th-head" colspan="2">Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Tổng giá</th>
+                    <th class="th-head-right"><i class="fas fa-trash-alt"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr_product">
+                    <td class="product_image" align="left">
+                        <img src="~/wwwroot/Images/Vo.JPG">
+
+                    </td>
+                    <td class="name_product">
+                        <h5>Tập Học Sinh 200 Trang ĐL 70g/m2 - FAHASA</h5>
+
+                    </td>
+                    <td class="price-product">15.000 VNĐ</td>
+                    <td><input type="text" value="1" class="numbers-pro" /></td>
+                    <td class="price-product">15.000 VNĐ</td>
+                    <td><i class="fas fa-times"></i></td>
+                </tr>
+
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+    <div class="total">
+        <div class="total_title">
+            <h4>Thành tiền</h4>
+        </div>
+        <div class="sumTotal">15.000 VNĐ</div>
+
+    </div>
+    <div class="total order_pro">
+        <div class="back">
+            <a href=@Url.Action("Index","Home") class="effect_a"><i class="fas fa-angle-double-left"></i> Quay lại mua hàng</a>
+        </div>
+        <div class="order">
+            <a href=@Url.Action("Order","Home") class="effect_a">Tiến hành thanh toán <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+    </div>
+
+
+</div>
+

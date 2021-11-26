@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+
+    <div class="contain_2 container-fluid">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <h2 class="page-title">Quản Lý Danh Mục</h2>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Header -->
+        <!--Content-->
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2">
+                <div class="table-data__tool pu">
+
+                    <div class="table-data__tool-right">
+                        <button class="au-btn ">
+                            @Html.ActionLink("Thêm", "Create", "Categories")
+                                  <i class="fas fa-plus"></i>
+                           
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-responsive table--no-card">
+                <table class="table table-borderless table-striped table-earning">
+                    <thead class="title-cate">
+                        <tr>
+                    <thead>
+                        <tr>
+                            <th>Mã Danh Mục</th>
+                            <th>Tên Danh Mục</th>
+                            <th>Hoạt Động</th>
+                        </tr>
+                    </thead>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <span class="block-email">Bút - Viết</span>
+                            </td>
+                            <td>
+                                <div class="table-data-feature">
+                                    <a class="item" href="@Url.Action("Edit","Categories")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <span class="block-email">Dụng Cụ Học Sinh</span>
+                            </td>
+                            <td>
+                                <div class="table-data-feature">
+
+                                    <a class="item" href="@Url.Action("Edit","Categories")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <span class="block-email">Sản Phẩm Về Giấy</span>
+                            </td>
+                            <td>
+                                <div class="table-data-feature">
+                                    <a class="item" href="@Url.Action("Edit","Categories")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <span class="block-email">Dụng Cụ Văn Phòng</span>
+                            </td>
+                            <td>
+                                <div class="table-data-feature">
+                                    <a class="item" href="suadanhmuc.html" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <span class="block-email">Dụng Cụ Vẽ</span>
+                            </td>
+                            <td>
+                                <div class="table-data-feature">
+                                    <a class="item" href="@Url.Action("Edit","Categories")" data-toggle="tooltip" data-placement="top" title="Sửa">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a class="item" data-placement="top" title="Xóa" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <!-- Xác nhận xoá -->
+                        @{
+                            Html.RenderPartial("Delete");
+                        }
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--end content-->
+
+    </div>
+</div>
+
